@@ -24,38 +24,38 @@ export class ContactComponent implements OnInit {
     private location: Location,
     private route:ActivatedRoute,
     private router: Router
-  	) { }
+    ) { }
  ngFormContact: FormGroup;
     submitted = false;
     public isError = false;
     public waiting = false;
     public msgError = '';
     contact = {
- 		nombre:"",
+    nombre:"",
         email:"",
         mensaje:"",
         asunto:""
   };
   number=0;
 
-// sendContact(){
-//     if (this.ngFormContact.valid){
+sendContact(){
+    if (this.ngFormContact.valid){
 
-//       this.contact.nombre=this.contact.nombre;
-//       this.contact.email=this.contact.email;
-//       this.contact.mensaje=this.contact.mensaje;
-//       this.contact.asunto=this.contact.asunto;
+      this.contact.nombre=this.contact.nombre;
+      this.contact.email=this.contact.email;
+      this.contact.mensaje=this.contact.mensaje;
+      this.contact.asunto=this.contact.asunto;
  
    
-//       this._uw.contact=this.contact;
-//       this._uw.isLogged=true;
+      this._uw.contact=this.contact; 
+      this._uw.isLogged=true;
     
-//       this.dataApi.sendContact(this.contact).subscribe();
-//     //  this.router.navigate(['/question']);
-//     } else {
-//       this.onIsError();
-//     }
-//    }
+      this.dataApi.sendContact(this.contact).subscribe();
+    //  this.router.navigate(['/question']);
+    } else {
+      this.onIsError();
+    }
+   }
   ngOnInit() {
             this.ngFormContact = this.formBuilder.group({
       nombre: ['', Validators.required],
