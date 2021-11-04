@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShadisliderComponent } from './shadislider.component';
+import { StaticComponent } from './static.component';
 
-describe('ShadisliderComponent', () => {
-  let component: ShadisliderComponent;
-  let fixture: ComponentFixture<ShadisliderComponent>;
+describe('StaticComponent', () => {
+  let component: StaticComponent;
+  let fixture: ComponentFixture<StaticComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShadisliderComponent ]
+      declarations: [ StaticComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShadisliderComponent);
+    fixture = TestBed.createComponent(StaticComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

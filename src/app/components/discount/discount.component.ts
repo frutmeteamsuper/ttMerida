@@ -10,11 +10,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
 declare var $: any;
 @Component({
-  selector: 'app-shadidiscount',
-  templateUrl: './shadidiscount.component.html',
-  styleUrls: ['./shadidiscount.component.css']
+  selector: 'app-discount',
+  templateUrl: './discount.component.html',
+  styleUrls: ['./discount.component.css']
 })
-export class ShadidiscountComponent implements AfterViewInit {   title = 'angularowlslider';
+export class DiscountComponent implements AfterViewInit {   title = 'angularowlslider';
   customOptions: any = {
     loop: true,
     mouseDrag: true,

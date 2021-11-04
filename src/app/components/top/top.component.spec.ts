@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShadibannerComponent } from './shadibanner.component';
+import { TopComponent } from './top.component';
 
-describe('ShadibannerComponent', () => {
-  let component: ShadibannerComponent;
-  let fixture: ComponentFixture<ShadibannerComponent>;
+describe('TopComponent', () => {
+  let component: TopComponent;
+  let fixture: ComponentFixture<TopComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShadibannerComponent ]
+      declarations: [ TopComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShadibannerComponent);
+    fixture = TestBed.createComponent(TopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShadicartComponent } from './shadicart.component';
+import { MostwantedComponent } from './mostwanted.component';
 
-describe('ShadicartComponent', () => {
-  let component: ShadicartComponent;
-  let fixture: ComponentFixture<ShadicartComponent>;
+describe('MostwantedComponent', () => {
+  let component: MostwantedComponent;
+  let fixture: ComponentFixture<MostwantedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShadicartComponent ]
+      declarations: [ MostwantedComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShadicartComponent);
+    fixture = TestBed.createComponent(MostwantedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -9,11 +9,11 @@ import { UserWService } from "../../services/user-w.service";
 
 
 @Component({
-  selector: 'app-shaditop',
-  templateUrl: './shaditop.component.html',
-  styleUrls: ['./shaditop.component.css']
+  selector: 'app-top',
+  templateUrl: './top.component.html',
+  styleUrls: ['./top.component.css']
 })
-export class ShaditopComponent implements OnInit {
+export class TopComponent implements OnInit {
 
   constructor(
   private dataApi: DataApiService,

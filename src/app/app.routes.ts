@@ -10,14 +10,15 @@ import {
 	FruitcartComponent,*/
 	PagoComponent,
 	PrincipalComponent,
-	ShadibannerComponent,
-	ShadibestsellerComponent,
-	ShadidiscountComponent,
-	ShadifooterComponent,
-	ShadimostwantedComponent,
-	ShadisliderComponent,
-	ShaditopComponent,
-	ShadishopComponent
+	BannerComponent,
+	BestsellerComponent,
+	DiscountComponent,
+	FooterComponent,
+	MostwantedComponent,
+	SliderComponent,
+	TopComponent,
+	ShadishopComponent,
+	ShopComponent
 
 	}from "./components/index.paginas";
 
@@ -25,14 +26,15 @@ import {
 
 const app_routes: Routes = [
 	{path:'',component:PrincipalComponent},
-	{path:'shadibanner',component:ShadibannerComponent},
-	{path:'shadibestseller',component:ShadibestsellerComponent},
-	{path:'shadidiscount',component:ShadidiscountComponent},
-	{path:'shadifooter',component:ShadifooterComponent},
-	{path:'shadimostwanted',component:ShadimostwantedComponent},
-	{path:'shadislider',component:ShadisliderComponent},
-	{path:'shaditop',component:ShaditopComponent},
+	{path:'banner',component:BannerComponent},
+	{path:'bestseller',component:BestsellerComponent},
+	{path:'discount',component:DiscountComponent},
+	{path:'footer',component:FooterComponent},
+	{path:'mostwanted',component:MostwantedComponent},
+	{path:'slider',component:SliderComponent},
+	{path:'top',component:TopComponent},
 	{path:'shadishop',component:ShadishopComponent},
+	{path:'shop',component:ShopComponent},
 /*	{path:'fruittopbar',component:FruittopbarComponent},
 	{path:'fruitproducts',component:FruitproductsComponent},
 	{path:'fruitbanner',component:FruitbannerComponent},

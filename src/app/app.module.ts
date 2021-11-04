@@ -48,18 +48,18 @@ import { FruittopbarComponent } from './components/fruittopbar/fruittopbar.compo
 import { FruitcartComponent } from './components/fruitcart/fruitcart.component';*/
 import { Component, Inject} from '@angular/core';
 import { PagoComponent } from './components/pago/pago.component';
-import { ShaditopComponent } from './components/shaditop/shaditop.component';
-import { ShadisliderComponent } from './components/shadislider/shadislider.component';
-import { ShadimostwantedComponent } from './components/shadimostwanted/shadimostwanted.component';
-import { ShadibannerComponent } from './components/shadibanner/shadibanner.component';
-import { ShadibestsellerComponent } from './components/shadibestseller/shadibestseller.component';
-import { ShadidiscountComponent } from './components/shadidiscount/shadidiscount.component';
-import { ShadifooterComponent } from './components/shadifooter/shadifooter.component';
+import { TopComponent } from './components/top/top.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { MostwantedComponent } from './components/mostwanted/mostwanted.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { BestsellerComponent } from './components/bestseller/bestseller.component';
+import { DiscountComponent } from './components/discount/discount.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ModalComponent } from './components/modal/modal.component';
-import { ShadistaticComponent } from './components/shadistatic/shadistatic.component';
-import { ShadicartComponent } from './components/shadicart/shadicart.component';
+import { StaticComponent } from './components/static/static.component';
+import { CartComponent } from './components/cart/cart.component';
 import { ShadishopComponent } from './components/shadishop/shadishop.component';
 
 @NgModule({
@@ -74,18 +74,18 @@ import { ShadishopComponent } from './components/shadishop/shadishop.component';
     FruittopbarComponent,
     FruitcartComponent,*/
     PagoComponent,
-    ShaditopComponent,
-    ShadisliderComponent,
-    ShadimostwantedComponent,
-    ShadibannerComponent,
-    ShadibestsellerComponent,
-    ShadidiscountComponent,
-    ShadifooterComponent,
+    TopComponent,
+    SliderComponent,
+    MostwantedComponent,
+    BannerComponent,
+    BestsellerComponent,
+    DiscountComponent,
+    FooterComponent,
     PrincipalComponent,
     ShopComponent,
     ModalComponent,
-    ShadistaticComponent,
-    ShadicartComponent,
+    StaticComponent,
+    CartComponent,
     ShadishopComponent,
   ],
   imports: [
