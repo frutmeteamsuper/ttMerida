@@ -1,0 +1,134 @@
+    <div class="contact-area mb-60px"  style="    padding-top: 60px;background: white;">
+        <div class="container">
+          <!--   <div class="contact-map mb-10">
+                <div id="map"></div>
+            </div> -->
+            <div class="custom-row-2">
+                <div class="col-lg-4 col-md-5 mb-lm-60px col-sm-12 col-xs-12 w-sm-100">
+                    <div class="contact-info-wrap">
+                        <div class="single-contact-info">
+                            <div class="contact-icon">
+                                <i class="ion-android-call"></i>
+                            </div>
+                            <div class="contact-info-dec">
+                                <p><a href="tel://04147449982"> 0414-7449982 </a></p>
+                                <p><a href="tel://04122472270">0412-2472270</a></p>
+                                <p><a href="tel://02742633152">0274-2633152</a></p>
+                            </div>
+                        </div>
+                        <div class="single-contact-info">
+                            <div class="contact-icon">
+                                <i class="ion-android-globe"></i>
+                            </div>
+                            <div class="contact-info-dec">
+                                <!-- <p><a href="mailto://urname@email.com">urname@email.com</a></p> -->
+                                <p><a href="https://techosytabiquesmerida.com/" target="_blank">techosytabiquesmerida.com</a></p>
+                            </div>
+                        </div>
+                        <div class="single-contact-info">
+                            <div class="contact-icon">
+                                <i class="ion-android-pin"></i>
+                            </div>
+                            <div class="contact-info-dec">
+                                <p>Direccion,</p>
+                                <p>Av. 2 Lora, casa Nro. 34-73 Sector Glorias Patrias.
+                                    <br /> Mérida Venezuela</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h3>Siguenos</h3>
+                            <div class="social-info">
+                                <ul>
+                                   <!--  <li>
+                                        <a href="contact.html#"><i class="ion-social-facebook"></i></a>
+                                    </li> -->
+                                   <!--  <li>
+                                        <a href="contact.html#"><i class="ion-social-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html#"><i class="ion-social-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html#"><i class="ion-social-google"></i></a>
+                                    </li> -->
+                                    <li>
+                                        <a  href="https://www.instagram.com/techosytabiquesmerida/" target="_blank"><i class="ion-social-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <div class="contact-form">
+                        <div class="contact-title mb-30">
+                            <h2>Dejanos un mensaje</h2>
+                        </div>
+                        <form class="contact-form-style" id="contact-form"  [formGroup]="ngFormContact" (ngSubmit) ="sendContact()"  >
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group ">
+
+                                                <label class="focus-label">Tu nombre</label>
+                                                <input type="text" class="form-control " id="nombre" formControlName="nombre" placeholder="Nombre" [(ngModel)]="contact.nombre" [ngClass]="{'is-invalid': submitted && fval.nombre.errors }"required>
+
+                                                <div *ngIf="submitted && fval.nombre.errors" class="invalid-feedback">
+                                                    <div *ngIf="fval.nombre.errors.required">
+                                                    El nombre es requerido
+                                                    </div>
+                                                 
+                                                </div>
+                                            </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="col-lg-6">
+                                    <div class="form-group ">
+                                             
+                                                <label class="focus-label">Tu e-mail</label>
+                                                    <input type="email" class="form-control " id="email" placeholder="Email" formControlName="email" [(ngModel)]="contact.email" required [ngClass]="{ 'is-invalid': submitted && fval.email.errors }">
+                                                <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
+                                                    <div *ngIf="fval.email.errors.required">El email es requerido</div>
+                                                    <div *ngIf="fval.email.errors.email">Ingrese una dirección de correo valida</div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group ">
+                                             
+                                                <label class="focus-label">Asunto</label>
+                                                    <input type="text" class="form-control " id="asunto" placeholder="Asunto" formControlName="asunto" [(ngModel)]="contact.asunto" required [ngClass]="{ 'is-invalid': submitted && fval.asunto.errors }">
+                                                <div *ngIf="submitted && fval.asunto.errors" class="invalid-feedback">
+                                                    <div *ngIf="fval.asunto.errors.required">El asunto es requerido</div>
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-lg-12">
+
+                                     <div class="form-group ">
+                                             
+                                                <label class="focus-label">Mensaje</label>
+                                                   <textarea name="mensaje" placeholder="Tu mensaje*"  class="form-control " id="mensaje" formControlName="mensaje" [(ngModel)]="contact.mensaje" required [ngClass]="{ 'is-invalid': submitted && fval.mensaje.errors }"></textarea>
+                                     <div *ngIf="submitted && fval.mensaje.errors" class="invalid-feedback">
+                                                    <div *ngIf="fval.mensaje.errors.required">El mensaje es requerido</div>
+                                                   
+                                                </div>
+                                               
+                                            </div>
+
+                                   
+                                    <button class="submit" type="submit" style="background-color: #fbd904;color: black;"  (click)="sendContact()">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

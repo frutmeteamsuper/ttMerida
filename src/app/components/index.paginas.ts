@@ -17,3 +17,5 @@ export { SliderComponent } from "./slider/slider.component";
 export { TopComponent } from "./top/top.component";
 export { ShadishopComponent } from "./shadishop/shadishop.component";
 export { ShopComponent } from "./shop/shop.component";
+export { ContactComponent } from "./contact/contact.component";
+export { AboutComponent } from "./about/about.component";

@@ -61,6 +61,8 @@ import { ModalComponent } from './components/modal/modal.component';
 import { StaticComponent } from './components/static/static.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ShadishopComponent } from './components/shadishop/shadishop.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +89,8 @@ import { ShadishopComponent } from './components/shadishop/shadishop.component';
     StaticComponent,
     CartComponent,
     ShadishopComponent,
+    ContactComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

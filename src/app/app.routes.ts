@@ -18,7 +18,9 @@ import {
 	SliderComponent,
 	TopComponent,
 	ShadishopComponent,
-	ShopComponent
+	ShopComponent,
+	ContactComponent,
+	AboutComponent
 
 	}from "./components/index.paginas";
 
@@ -35,6 +37,8 @@ const app_routes: Routes = [
 	{path:'top',component:TopComponent},
 	{path:'shadishop',component:ShadishopComponent},
 	{path:'shop',component:ShopComponent},
+	{path:'contact',component:ContactComponent},
+	{path:'about',component:AboutComponent},
 /*	{path:'fruittopbar',component:FruittopbarComponent},
 	{path:'fruitproducts',component:FruitproductsComponent},
 	{path:'fruitbanner',component:FruitbannerComponent},
